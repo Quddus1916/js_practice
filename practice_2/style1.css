@@ -1,0 +1,36 @@
+*
+{
+    padding: 10%;
+    padding-block: 0px;
+    background-color: purple;
+    
+    
+}
+h1
+{
+    background-color: green;
+    
+}
+
+#title
+{
+    padding-left: initial;
+    background-color: lightcoral;
+    padding-bottom: 4%;
+    color: lawngreen;
+
+    
+}
+
+#name
+{
+ background-color: blue;
+ padding-left: 2%;
+    
+
+}
+#note
+{
+    background-color: yellow;
+    padding-left: 0%;
+}
