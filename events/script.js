@@ -1,3 +1,7 @@
+
+
+
+
 function checkusername(){
     var feedback = document.getElementById('feedback');
     var name = document.getElementById('username');
@@ -11,3 +15,7 @@ function checkusername(){
         feedback.textContent=''
     }
 }
+
+var el = document.getElementById('username');
+//el.onblur = checkusername;
+el.addEventListener('blur',checkusername,false)
