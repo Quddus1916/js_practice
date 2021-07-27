@@ -37,10 +37,20 @@
 // booklist.previousElementSibling.querySelector('p').innerHTML+='<br/> enjoy with books'
 
 
-var btns = document.querySelectorAll('#book-list .delete')
-Array.from(btns).forEach(function(btn){
-    btn.addEventListener('click',function(e){
+// var btns = document.querySelectorAll('#book-list .delete')
+// Array.from(btns).forEach(function(btn){
+//     btn.addEventListener('click',function(e){
+//         const li = e.target.parentElement
+//         li.parentNode.removeChild(li)
+//     })
+// })
+
+var list = document.querySelector('#book-list ul')
+
+list.addEventListener('click',function(e){
+    if(e.target.className =='delete')
+    {
         const li = e.target.parentElement
-        li.parentNode.removeChild(li)
-    })
+       list.removeChild(li)
+    }
 })
