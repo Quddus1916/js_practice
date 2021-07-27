@@ -80,3 +80,17 @@ addform.addEventListener('submit',function(e){
     li.appendChild(dltbtn)
     list.appendChild(li)
 })
+
+
+
+const hidebox = document.querySelector('#hide')
+
+hidebox.addEventListener('change',function(e){
+    if(hidebox.checked)
+    {
+        list.style.display="none"
+    }
+    else{
+        list.style.display="initial"
+    }
+})
