@@ -45,6 +45,8 @@
 //     })
 // })
 
+
+//delete book
 var list = document.querySelector('#book-list ul')
 
 list.addEventListener('click',function(e){
@@ -53,4 +55,28 @@ list.addEventListener('click',function(e){
         const li = e.target.parentElement
        list.removeChild(li)
     }
+})
+
+// add book
+const addform = document.forms['add-book']
+addform.addEventListener('submit',function(e){
+    e.preventDefault()
+    const value = addform.querySelector('input[type="text"]').value
+    
+
+    const li = document.createElement('li')
+    const bookname= document.createElement('span')
+    const dltbtn =document.createElement('span')
+
+    dltbtn.textContent='delete'
+    bookname.textContent= value
+
+    bookname.classList.add('name')
+    dltbtn.classList.add('delete')
+
+
+
+    li.appendChild(bookname)
+    li.appendChild(dltbtn)
+    list.appendChild(li)
 })
